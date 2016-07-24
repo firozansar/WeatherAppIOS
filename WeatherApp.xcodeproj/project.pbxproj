@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D64A3EA11D44DD1900D8AA9C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A3EA01D44DD1900D8AA9C /* Weather.swift */; };
 		D69F21771D441E4300094A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F21761D441E4300094A6C /* AppDelegate.swift */; };
 		D69F21791D441E4300094A6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F21781D441E4300094A6C /* ViewController.swift */; };
 		D69F217C1D441E4300094A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69F217A1D441E4300094A6C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		D69F21841D441E4300094A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69F21821D441E4300094A6C /* LaunchScreen.storyboard */; };
 		D69F218F1D441E4300094A6C /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F218E1D441E4300094A6C /* WeatherAppTests.swift */; };
 		D69F219A1D441E4300094A6C /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F21991D441E4300094A6C /* WeatherAppUITests.swift */; };
+		D6A44F5F1D4499E70015CD6C /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A44F5E1D4499E70015CD6C /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D64A3EA01D44DD1900D8AA9C /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		D69F21731D441E4300094A6C /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69F21761D441E4300094A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D69F21781D441E4300094A6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		D69F21951D441E4300094A6C /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69F21991D441E4300094A6C /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		D69F219B1D441E4300094A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A44F5E1D4499E70015CD6C /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				D69F21761D441E4300094A6C /* AppDelegate.swift */,
 				D69F21781D441E4300094A6C /* ViewController.swift */,
+				D6A44F5E1D4499E70015CD6C /* WeatherService.swift */,
+				D64A3EA01D44DD1900D8AA9C /* Weather.swift */,
 				D69F217A1D441E4300094A6C /* Main.storyboard */,
 				D69F21801D441E4300094A6C /* Assets.xcassets */,
 				D69F21821D441E4300094A6C /* LaunchScreen.storyboard */,
@@ -259,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A44F5F1D4499E70015CD6C /* WeatherService.swift in Sources */,
 				D69F217F1D441E4300094A6C /* WeatherApp.xcdatamodeld in Sources */,
 				D69F21791D441E4300094A6C /* ViewController.swift in Sources */,
 				D69F21771D441E4300094A6C /* AppDelegate.swift in Sources */,
+				D64A3EA11D44DD1900D8AA9C /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +494,7 @@
 				D69F21A01D441E4300094A6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D69F21A11D441E4300094A6C /* Build configuration list for PBXNativeTarget "WeatherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +503,7 @@
 				D69F21A31D441E4300094A6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D69F21A41D441E4300094A6C /* Build configuration list for PBXNativeTarget "WeatherAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +512,7 @@
 				D69F21A61D441E4300094A6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
