@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol WeatherServiceDelegate {
     func setWeather(weather: Weather)
@@ -20,12 +21,27 @@ class WeatherService {
         
         let path = "http://api.openweathermap.org/data/2.5/weather?q=London&appid=955cf71f7b2404f0405a590374db8a76"
         let url = NSURL(string: path)
-        let session = NSURLSession.sharedSession()
-        let task = session.dataTaskWithURL( url!) { (data: NSData?, response: NSURLResponse?, error: NSError?) in
-            print(data)
-        }
+        //let session = NSURLSession.sharedSession()
+        //let task = session.dataTaskWithURL( url!) { (data: NSData?, response: NSURLResponse?, error: NSError?) in
+         //   print(data)
+        //}
         
-        task.resume()
+        //task.resume()
+        Alamofire.request(.GET, url!).validate().responseJSON { response in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    //print("JSON: \(json)")
+                    let lon = json["coord"]["lon"].double
+                    let lat = json["coord"]["lat"].double
+                    let temp = json["main"]["temp"].double
+                    print("lat: \(lat), lon: \(lon), temp \(temp)")
+                }
+            case .Failure(let error):
+                print(error)
+            }
+        }
         
     
     }

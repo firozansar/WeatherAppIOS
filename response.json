@@ -1,0 +1,41 @@
+{
+  "name" : "London",
+  "id" : 2643743,
+  "weather" : [
+    {
+      "id" : 801,
+      "main" : "Clouds",
+      "icon" : "02d",
+      "description" : "few clouds"
+    }
+  ],
+  "base" : "cmc stations",
+  "wind" : {
+    "speed" : 5.1,
+    "deg" : 220
+  },
+  "clouds" : {
+    "all" : 20
+  },
+  "dt" : 1469387910,
+  "cod" : 200,
+  "coord" : {
+    "lon" : -0.13,
+    "lat" : 51.51
+  },
+  "main" : {
+    "humidity" : 68,
+    "temp_max" : 296.15,
+    "temp_min" : 292.15,
+    "temp" : 294.31,
+    "pressure" : 1017
+  },
+  "sys" : {
+    "id" : 5091,
+    "message" : 0.01,
+    "country" : "GB",
+    "type" : 1,
+    "sunset" : 1469390338,
+    "sunrise" : 1469333653
+  }
+}
