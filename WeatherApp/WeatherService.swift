@@ -17,12 +17,19 @@ class WeatherService {
     var delegate: WeatherServiceDelegate?
     
     func getWeather(city: String){
-        print("Weather service city: \(city)")
         
-        let weather = Weather(cityName: city, temp: 25, description: "A nice day")
-        
-        if(delegate != nil){
-            delegate?.setWeather(weather)
+        let path = "http://api.openweathermap.org/data/2.5/weather?q=London&appid=955cf71f7b2404f0405a590374db8a76"
+        let url = NSURL(string: path)
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithURL( url!) { (data: NSData?, response: NSURLResponse?, error: NSError?) in
+            print(data)
         }
+        
+        task.resume()
+        
+    
     }
+        
+        
 }
+

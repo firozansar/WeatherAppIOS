@@ -62,6 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="PK7-Po-NeE" id="M23-sD-KQ2"/>
+                        <outlet property="descLabel" destination="bAw-rE-Lwc" id="qzb-Qt-geh"/>
                         <outlet property="tempLabel" destination="nqP-mq-7jD" id="crj-GV-eIH"/>
                     </connections>
                 </viewController>

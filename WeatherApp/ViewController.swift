@@ -43,14 +43,16 @@ class ViewController: UIViewController, WeatherServiceDelegate {
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
-    func setWeather() {
-        print("***viewController delegate setWeather")
+    func setWeather(weather: Weather) {
+        self.tempLabel.text = String(weather.temp)
+        self.descLabel.text = weather.description
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.weatherService.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
